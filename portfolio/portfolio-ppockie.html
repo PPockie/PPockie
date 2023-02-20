@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: #101010;
+        }
+        .navlink li a{
+            transition: all .3s ease 0s;
+        }
+        a:link {
+            text-decoration: none;
+        }
+        
+        .navlink li a:hover{
+            -webkit-text-fill-color: #ff006e;
+            -webkit-text-stroke: 0px;
+            text-shadow: 0 0 35px #a7235c;
+            text-decoration: none;
+            cursor: none;
+        }
+        .port {
+            font-family: sans-serif;
+            font-size: 80px;
+            margin-top: 8rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 0 0 20px #a7235c;
+            cursor: none;
+        }
+        span {
+            color: #ff006e;
+            ;
+        }
+        h1 {
+            font-family: sans-serif;
+            font-size: 30px;
+        }
+
+        h4 {
+            color: #c70056;
+            margin: 5px;
+        }
+
+        h2 {
+            margin-left: 30px;
+        }
+        .navbar {
+            position: fixed;
+            width: 100%;
+            background-color: #101010;
+            z-index: 1000;
+           
+        }
+        .content {
+           padding-top: 110px;
+        }
+        img {
+           opacity: 10%;
+           filter: blur(8px) grayscale();
+           transition: all .5s ease 0s;
+           border-radius: 8px;
+           z-index: 5;
+        }
+        img:hover {
+            opacity: 100%;
+            filter:none;
+            border: 4px solid #ff006e;
+            padding: 5px;
+            cursor:none;
+    
+        }
+        p {
+            color: #ff006e;
+            text-shadow: 3px 3px 10px #fc2582;
+        }
+        th {
+            font-size: 20px;
+            font-weight: 800;
+            color: #ff77b2;
+            text-shadow: 0 0 5px #ff006f;
+        }
+
+       .wrapper {
+        max-height: 400px;
+        display: flex;
+        overflow-x: auto;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        
+       }
+      
+       .wrapper::-webkit-scrollbar {
+        cursor: crosshair;
+       }
+       
+
+      
+
+       .wrapper .item {
+        min-width: 433px;
+        height: 200px;
+        opacity: 100%;
+        filter: none;
+        margin-right: 5px;
+        border-radius: 2px;
+        line-height: 200px;
+        transition: none;
+        padding: 0px;
+        border: none;
+       }
+       .detail {
+        text-shadow: none;
+        color: rgb(236, 236, 236);
+        margin: 2rem
+       }
+       h3{
+        transition: all 1.0s ease 0s;
+       }
+       h3:hover {
+        color: #ff006f;
+       }
+       h3 span:hover{
+        color: white;
+        transition: all 1.0s ease 0s;
+       }
+
+       
+       .languages li .thai {
+        display: none;
+       }
+
+       .languages li:hover .english {
+        display: none;
+       }
+       .languages li:hover .thai {
+        display: block;
+       }
+       .list-about {
+        list-style: none;
+       }
+
+       .li-con-grid{
+        display: grid;
+        margin-left: 5rem;
+        margin-bottom: 3rem;
+        
+       }
+       .li-con-grid .item-icon i {
+        font-size: 2.5rem;
+        padding-top: 2.5rem;
+        color: #ff006e;
+       }
+
+       i .contact-detail {
+        margin-left: 1rem;
+        font-size: 24px;
+        font-family: sans-serif;
+        color: white;
+        
+       }
+
+       .copyright p{
+    text-align: center;
+    padding: 30px;
+    text-shadow: none;    
+    background: #101010;
+    margin-top: 10rem;
+    line-height: 1.8rem;
+}
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <nav class="navbar" id="navbar">
+            <ul class="navlink" style="display: flex;flex-wrap: wrap;justify-content: space-between;align-items: center;padding: 30px 10%;list-style: none;font-family: 'Bebas Neue', cursive;font-size: 80px;-webkit-text-stroke: 1px;-webkit-text-stroke-color: rgb(30, 30, 30);-webkit-text-fill-color: #101010;z-index: 99;">
+                <li style="display: inline-block; padding: 0px 20px;">
+                    <a  href="#about">About</a>
+                </li>
+                <li style="display: inline-block; padding: 0px 20px;">
+                    <a href="#education">Education</a>
+                </li>
+                <li style="display: inline-block; padding: 0px 20px;">
+                    <a href="#project">Project</a>
+                </li>
+                <li style="display: inline-block; padding: 0px 20px;">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="content">
+    <section class="about"style="margin: 4rem;margin-left: 8rem;margin-right: 8rem ;align-items:center ;color: aliceblue;font-family: sans-serif;">
+        <div>
+            <div class="port">
+                <h3>PORT<span>FOLIO</span></h3>
+            </div>
+                <div class="img" id="about" style="display: flex;justify-content: space-around;margin: 3.37rem;margin-bottom: 5rem;margin-top: 5rem;z-index: 5">
+                    <img src="img/p1.jpg" alt="something" width="300px">
+                    <img src="img/p2 1.png" alt="something2" width="300px">
+                    <img src="img/p3 1.png" alt="something3" width="300px">
+            </div>
+                <div class="languages">
+                    <li class="list-about">    
+                        <h1 class="english">ABOUT ME</h1>
+                        <h1 class="thai">เกี่ยวกับฉัน</h1>
+
+                        <p>___________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+                        <br>
+                        <h4 class="english">Name</h4>
+                        <h4 class="thai">ชื่อ-นามสกุล</h4>
+                    
+                        <h2 class="english">Thanawat Phuwarosjirapong</h2>
+                        <h2 class="thai">ธนวัฒน์ ภูวรสจิระพงศ์</h2>
+                    
+                        <h4 class="english">Date of Birth</h4>
+                        <h4 class="thai">วันเกิด</h4>
+                    
+                        <h2 class="english">2 January 2000</h2>
+                        <h2 class="thai">2 มกราคม 2543</h2>
+                    
+                        <h4 class="english">Age</h4>
+                        <h4 class="thai">อายุ</h4>
+
+                        <h2 class="english">23 Years old</h2>
+                        <h2 class="thai">23 ปี</h2>
+
+                        <h4 class="english">Gender</h4>
+                        <h4 class="thai">เพศ</h4>
+
+                        <h2 class="english">Male</h2>
+                        <h2 class="thai">ชาย</h2>
+
+                </li>    
+            </div>    
+        </div>
+
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        <div class="languages">
+            <li class="list-about">
+                <h1 class="english">Favorite</h1>
+                <h1 class="thai">สิ่งที่ชอบ</h1>
+                <p>___________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+                <br>
+                <br>
+                <br>
+                <h2>Kuroba <span>Kaito</span> ( 1412 )</h2>
+            </li>
+            <div class="wrapper">
+                <img class="item" src="https://38.media.tumblr.com/0c14de76556bec43db76680516ee2526/tumblr_ncyq1xdvJ01txotz6o1_500.gif" alt="">
+                <img class="item" src="https://media.tenor.com/Z1dL-dCjt8YAAAAC/magic-kaito-kaito-kid.gif" alt="">
+                <iframe class="item" width="433" height="200" src="https://www.youtube.com/embed/Q9esf5COzck" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    
+    </section>
+
+    <section class="edu" id="education" style="margin: 4rem;margin-left: 8rem;margin-right: 8rem ;margin-top: 15rem;align-items:center ;color: aliceblue;font-family: sans-serif;">
+        <div class="languages">
+            <li class="list-about">    
+                <h1 class="english">Education</h1>
+                <h1 class="thai">การศึกษา</h1>
+                <p>___________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+                <br>
+                <table style="display: flex;justify-content: center;margin:5rem;">
+                    <tr>
+                        <th style="border: 2px solid #a7235c;width: 30%;padding: 2rem;">Grade 7-12</th>
+                        <th style="border: 2px solid #a7235c;width: 30%;padding: 2rem">Diploma</th>
+                        <th style="border: 2px solid #a7235c;width: 30%;padding: 2rem">Bachelor degree</th>
+                    </tr>
+                
+                    <tr>
+                        <td style="border: 2px solid #a7235c;width: 40%;padding: 8px;">Sarasas Witaed Ratchaphruek</td>
+                        <td style="border: 2px solid #a7235c;width: 30%;padding: 8px">Thai-Tech Kalasin School</td>
+                        <td style="border: 2px solid #a7235c;width: 30%;padding: 8px">Sripatum University Khonkaen</td>
+                    </tr>
+
+                    <tr>
+                        <td style="border: 2px solid #a7235c;width: 30%;padding: 8px;">Billigual Programme</td>
+                        <td style="border: 2px solid #a7235c;width: 30%;padding: 8px;">Business Computer</td>
+                        <td style="border: 2px solid #a7235c;width: 30%;padding: 8px;">Digital Business Innovation</td>
+                    </tr>
+                </table> 
+            </li>        
+            <h1>การศึกษา</h1>
+            <p>___________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+            <br>
+            
+            <table style="display: flex;justify-content: center;margin:5rem;">
+                <tr>
+                    <th style="border: 2px solid #a7235c;width: 30%;padding: 2rem;">มัธยมศึกษาปีที่ 1- 6</th>
+                    <th style="border: 2px solid #a7235c;width: 30%;padding: 2rem">ปวส.</th>
+                    <th style="border: 2px solid #a7235c;width: 30%;padding: 2rem">ปริญญาตรี</th>
+                </tr>
+                
+                <tr>
+                    <td style="border: 2px solid #a7235c;width: 40%;padding: 8px;">โรงเรียนสารสาสน์วิเทศราชพฤษ์</td>
+                    <td style="border: 2px solid #a7235c;width: 30%;padding: 8px">วิทยาลัยไท-เทคกาฬสินธ์ุ</td>
+                    <td style="border: 2px solid #a7235c;width: 30%;padding: 8px">มหาวิทยาลัยศรึปทุม ขอนแก่น</td>
+                </tr>
+
+                <tr>
+                    <td style="border: 2px solid #a7235c;width: 30%;padding: 8px;">หลักสูตร 2 ภาษา</td>
+                    <td style="border: 2px solid #a7235c;width: 30%;padding: 8px;">สาขาคอมพิวเตอร์ธุรกิจ</td>
+                    <td style="border: 2px solid #a7235c;width: 30%;padding: 8px;">สาขานวัตกรรมธุรกิจดิจิทัล</td>
+                </tr>
+            </table> 
+        </div>    
+    
+    </section>
+
+    <section class="prj" id="project" style="margin: 4rem;margin-left: 8rem;margin-right: 8rem ;margin-top: 15rem;align-items:center ;color: aliceblue;font-family: sans-serif;">
+        <div>
+            <h1>PROJECT</h1>
+            <p>___________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+            <br>
+            <br>
+            <br>
+            <h2>Basket <span>Way</span></h2>
+            <div class="wrapper">
+                <img class="item" src="img/b1.png" alt="">
+                <img class="item" src="img/b2.png" alt="">
+                <img class="item" src="img/b3.png" alt="">
+            </div> 
+            <p class="detail">ผลงานชิ้นนี้ทำด้วยโปรแกรม Figma เป็นการ Design UI ของเกม <i>Basket Way หรือ เส้นทางสู่บาสเก็ตบอลในฝัน</i> ผลงานชิ้นทำขึ้นเพื่อส่งประกวดรายการ 
+                <i>National Software Contest Thailand ( NSC Thailand )</i>
+            </p>   
+        </div>
+    </section>
+
+    <section class="cnt" id="contact" style="margin: 4rem;margin-left: 8rem;margin-right: 8rem ;margin-top: 15rem;align-items:center ;color: aliceblue;font-family: sans-serif;">
+        <div>
+            <h1>CONTACT</h1>
+            <p>___________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+            <br>
+            <br>
+            <br>
+            <div class="li-con-grid">
+                <div class="item-icon" id="contact">
+                    <a href="https://www.instagram.com/" target="_blank" class="item-icon">
+                        <i class='bx bxl-instagram'>
+                            <b class="contact-detail">Instagram</b>
+                        </i>
+                    </a>
+                </div>
+                
+                <div class="item-icon" id="contact">
+                    <a href="https://www.facebook.com/" target="_blank" class="item-icon">
+                        <i class='bx bxl-facebook' >
+                            <b class="contact-detail">Facebook</b>
+                        </i>
+                    </a>
+                </div>
+                
+                <div class="item-icon" id="contact">
+                    <a href="https://github.com/" target="_blank" class="item-icon">
+                        <i class='bx bxl-github'>
+                            <b class="contact-detail">Github</b>
+                        </i>
+                    </a>
+                </div>
+                
+                <div class="item-icon" id="contact">
+                    <a href="https://www.linkedin.com/in/thanawat-phuwarosjirapong-77b339261/" target="blank" class="item-icon">
+                        <i class='bx bxl-linkedin'>
+                            <b class="contact-detail">LinkIn</b>
+                        </i>
+                    </a>
+                </div>
+        
+                
+        </div>
+            <p style="margin-top: 5rem;">___________________________________________________________________________________________________________________________________________________________________________________________________________________</p>
+
+    </section>
+</div>
+    <section style="margin: 4rem;margin-left: 8rem;margin-right: 8rem ;margin-top: 1rem;align-items:center ;color: aliceblue;font-family: sans-serif;">
+        <div>
+            <a href="#top" style="font-weight: 800;font-size: 24px;color: white;">RETURN TO TOP</a>
+        </div>
+    </section>
+
+<div class="copyright">
+    <p>Copyright 2023 Portfolio_Theme, All right Reserved.
+        <br>Created by PPockie</p>
+</div>
+</body>
+</html>
