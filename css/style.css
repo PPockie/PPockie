@@ -367,7 +367,7 @@ section{
 
 }
 .wrapper::-webkit-scrollbar {
-    zoom: 1;
+    cursor: pointer;
 }
 
 .box h4{
