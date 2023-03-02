@@ -75,13 +75,18 @@ header{
 }
 
 .image {
-    background-color: black;
+    background-color: rgb(224, 224, 224);
     width: 500px;
     height: 150px;
     display: grid;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    
+}
+.image .logo-otop {
+    margin-top: -10px;
+
     
 }
 
@@ -101,8 +106,4 @@ header{
 }
 .detail p {
     font-size: var(--p-font);
-}
-.detail h5 {
-    
-    
 }
