@@ -70,18 +70,21 @@ header{
     background-color: #001c28da;
     padding: 30px 30px ;
     margin-bottom: 1rem;
-    display: flex;
+    display: grid;
     border-radius: 4px;
 }
 
 .image {
-    background-color: rgb(224, 224, 224);
+    /* background-color: rgb(224, 224, 224); */
     width: 500px;
     height: 150px;
     display: grid;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
+    margin-left: 20%;
+    margin-top: 3.5rem;
+    margin-bottom: 10rem;
     
 }
 .image .logo-otop {
@@ -92,12 +95,17 @@ header{
 
 .detail {
     margin-left: 2rem;
+    margin-bottom: 2rem;
 }
 
 .detail h3 {
     margin-bottom: 1.5rem;
     margin-top: .5rem;
     font-size: var(--h3-font);
+    color: var(--main-color);
+}
+.detail h4 {
+    font-size: 20px;
 }
 .detail h6 {
     margin-top: -1.2rem;
@@ -106,4 +114,10 @@ header{
 }
 .detail p {
     font-size: var(--p-font);
+}
+
+blockquote {
+    margin-left: 1rem;
+    margin-right: 3rem;
+
 }

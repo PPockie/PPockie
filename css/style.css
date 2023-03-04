@@ -140,6 +140,27 @@ section{
 .home-text h4{
     font-weight: 400;
 }
+.blog {
+    border-radius: 3px;
+    background: var(--main-color);
+    color: var(--text-color);
+    box-shadow: 4px 4px var(--2nd-main-color);
+    line-height: 42px;
+    padding: 0 25px;
+    display: inline-block;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: ease all 0.35s;
+}
+.blog:hover {
+    border-radius: 10px;
+    background: var(--text-color);
+    color: var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+}
+
 
 .btn{
     border-radius: 3px;
