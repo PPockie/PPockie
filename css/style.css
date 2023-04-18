@@ -237,6 +237,7 @@ section{
     font-weight: 400;
     letter-spacing: 2px;
     transition: ease all 0.35s;
+    width: 180px;
 }
 .abtn:hover{
     border-radius: 10px;
@@ -574,6 +575,7 @@ form .send-btn:hover{
         grid-gap: 2rem;
         text-align: center;
         margin-top: 80px;
+        margin-bottom: 5rem;
         height: 100vh;
     }
     .home-text p{
@@ -587,5 +589,9 @@ form .send-btn:hover{
     .home-img .sdimage{
         max-width: 100%;
         transition: none;
+    }
+    .abtn {
+        margin-bottom: 1rem;
+
     }
 }
