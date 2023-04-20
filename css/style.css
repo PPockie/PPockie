@@ -533,6 +533,13 @@ form .send-btn:hover{
     }
     .home{
         height: 70vh;
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+    
+    .abtn {
+        margin-bottom: 1rem;
+
     }
 }
 
@@ -566,6 +573,14 @@ form .send-btn:hover{
     }
     .navbar.active{
         top: 100%;
+    }
+    .home {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+    .abtn {
+        margin-bottom: 1rem;
+
     }
 }
 
