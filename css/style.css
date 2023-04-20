@@ -523,6 +523,15 @@ form .send-btn:hover{
         --big-font: 3rem;
         --h2-font: 1.2rem;
      }
+     .home{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
+    
+    .abtn {
+        margin-bottom: 1rem;
+
+    }
 }
 
 @media (max-width: 1430px){
