@@ -15,6 +15,7 @@
     --2nd-main-color: #fb8500;
     --3rd-main-color: #e5e5e5;
     --text-color: #fff;
+    --bg-container:#001c2bda;
     --big-font: 5rem;
     --h2-font: 1.9rem;
     --p-font: 1rem;
@@ -99,6 +100,186 @@ nav a:hover:before {
     visibility: visible;
 }
 
+/*-- Content --*/
+.section-container {
+    width: 100%;
+}
+.topic-blog h1 {
+    font-size: 34px;
+    color: var(--main-color);
+    padding: 2rem 5rem;
+}
+.topic-blog p {
+    margin-left: 6rem;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+    font-size: 14px;
+}
+.section-one {
+    width: 100%;
+    background-color: var(--bg-container);
+    box-shadow: 0 0 50px 10px#00080c91;
+    padding: 2rem 5rem;
+    padding-right: 4rem;
+    border-radius: 2rem;
+
+    /*-- Adjust section --*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.section-one img {
+    margin-left: 10rem;
+    margin-top: 3rem;
+    width: 400px;
+    height: auto;
+    margin-bottom: 3rem;
+}
+.section-one h2 {
+    margin-bottom: .5rem;
+    color: var(--main-color);
+}
+.section-one p {
+    width: 600px;
+    font-size: 18px;
+    margin-right: 10rem;
+    line-height: 1.8rem;
+    text-align: start;
+}
+
+/*-- Section Two --*/
+.section-two {
+    width: 100%;
+    padding: 2rem 5rem;
+    padding-right: 4rem;
+    margin-top: 2rem;
+
+    /*-- Adjust section --*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.section-two img {
+    width: 400px;
+    height: auto;
+    margin-bottom: 3rem;
+    margin-right: 15rem;
+    border-radius: 10px;
+}
+.detail-box {
+    width: 600px;
+}
+.detail-box h2 {
+    margin-bottom: .5rem;
+    color: var(--main-color);
+}
+.detail-box ul li {
+    justify-content: start;
+    list-style: int;
+    width: 600px;
+    font-size: 18px;
+    line-height: 1.8rem;
+    margin-left: 3rem;
+}
+
+/*-- Credit --*/
+.credit h2 {
+    padding-left: 2rem;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: var(--main-color);
+    position: relative;
+    margin-right: 3rem;
+    margin-top: 3rem;
+    margin-bottom: .5rem;
+
+    background-color: #fff;
+}
+
+.credit h2::before {
+    content: attr(data-hover);
+    visibility: hidden;
+    opacity: 0;
+    width: 600px;
+    background-color: var(--main-color);
+    color: var(--bg-color);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px;
+    transition: opacity 1s ease-in-out , left .5s ease-in-out  ;
+    /*-- Position --*/
+    position: absolute;
+    z-index: 1;
+    left: 20%;
+    top: -100%;
+}
+.credit h2:hover:before {
+    opacity: 1;
+    left: 15%;
+    visibility: visible;
+    font-size: 14px;
+}
+.credit p {
+    margin-left: 2rem;
+    font-size: 16px;
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 1px;
+    
+}
+
+/*-- Adjust --*/
+.adjust-img {
+    border-radius: 10px;
+}
+
+/*-- Responsive Section One --*/
+@media (max-width: 1430px) {
+    .section-one{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .section-one img {
+        display: flex;
+        align-items: center;
+        width: 350px;
+    }
+    .section-one p {
+        width: 100%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: start;
+    }
+
+    .section-two {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+    .section-two img {
+        display: flex;
+        align-items: center;
+        width: 350px;
+        margin-right: 0rem;
+    }
+    .section-two h2 {
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        margin-left: -2rem;
+    }
+    .section-two ul li {
+        margin-left: 2rem;    
+    }
+
+}
 
 
 footer {
@@ -109,8 +290,8 @@ footer {
     align-items: center;
     text-align: center;
     line-height: 1.8rem;
-    position: absolute;
     bottom: 0;
+    margin-top: 3rem;
 
     /*-- Footer style --*/
     background: #001824da;
