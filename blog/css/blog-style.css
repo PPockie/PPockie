@@ -189,7 +189,7 @@ nav a:hover:before {
 .credit h2 {
     padding-left: 2rem;
     font-family: 'Bebas Neue', cursive;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 700;
     letter-spacing: 2px;
     text-decoration: none;
@@ -202,35 +202,9 @@ nav a:hover:before {
     background-color: #fff;
 }
 
-.credit h2::before {
-    content: attr(data-hover);
-    visibility: hidden;
-    opacity: 0;
-    width: 600px;
-    background-color: var(--main-color);
-    color: var(--bg-color);
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    transition: opacity 1s ease-in-out , left .5s ease-in-out  ;
-    /*-- Position --*/
-    position: absolute;
-    z-index: 1;
-    left: 20%;
-    top: -100%;
-}
-.credit h2:hover:before {
-    opacity: 1;
-    left: 15%;
-    visibility: visible;
-    font-size: 14px;
-}
 .credit p {
-    margin-left: 2rem;
-    font-size: 16px;
-    font-family: 'Bebas Neue', cursive;
-    letter-spacing: 1px;
-    
+    text-align: start;
+    margin: 2rem;
 }
 
 /*-- Adjust --*/
@@ -295,5 +269,6 @@ footer {
 
     /*-- Footer style --*/
     background: #001824da;
+    box-shadow: 0 -10px 50px #00080c91;
 }
 
