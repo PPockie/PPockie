@@ -206,6 +206,9 @@ nav a:hover:before {
     margin: 2rem;
     text-align: center;
 }
+.credit a {
+    color: var(--main-color);
+}
 
 
 /*-- Adjust --*/
