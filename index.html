@@ -233,7 +233,7 @@
                   <h3>Contact me</h3>
                 </div>
                 <div class="contact-form">
-                    <form action="">
+                    <form action="" onsubmit="sendEmail(); reset(); return false;">
                         <input type="" placeholder="ชื่อ-นามสกุล(name & surname)" required>
                         <input type="email" name="" id="" placeholder="อีเมล์ (example@example.com)" required>
                         <textarea name="" id="" cols="30" rows="10" placeholder="ข้อความที่ต้องการส่งหาฉัน(massenge)"></textarea>
@@ -248,6 +248,7 @@
             <br>Credit by Tahmid Ahmed!</p>
     </div>
     <!-----Link to js----->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
 
 </body>

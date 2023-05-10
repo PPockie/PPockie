@@ -19,3 +19,20 @@ for (var i = 0; i < btns.length; i++) {
   this.className += " active";
   });
 }
+//---- Send Email ----
+function sendEmail(){
+  Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "peettanawat123@gmail.com",
+    Password : "Kingshadow12",
+    To : 'poksmilepop@gmail.com',
+    From : document.getElementsByID("email").value,
+    Subject : "Contact Form Enquiry",
+    Body : "Name :" + document.getElementById("name").value
+     + "<br /> Email :" + document.getElementById("email").value 
+     + "<br /> Phone no." + document.getElementById("phone").value
+     + "<br /> Message :" + document.getElementById("message").value
+}).then(
+  message => alert("Ok")
+);
+}
